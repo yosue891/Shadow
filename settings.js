@@ -17,7 +17,6 @@ global.owner = [
 "5216671548329"
 ]
 
-global.mods = []
 global.suittag = ["573196588149"] 
 global.prems = []
 
