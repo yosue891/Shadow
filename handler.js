@@ -135,10 +135,10 @@ const isOwner = isROwner || m.fromMe
 const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender) || user.premium == true
 
 if (opts["nyimak"])  return
-if (!m.fromMe && !isMods && setting["self"]) return
-if (!m.fromMe && !isMods && setting["gponly"] && !m.chat.endsWith("g.us") && !/code|p|ping|qr|estado|status|infobot|botinfo|report|reportar|invite|join|logout|suggest|help|menu/gim.test(m.text)) return
+if (!m.fromMe && setting["self"]) return
+if (!m.fromMe && setting["gponly"] && !m.chat.endsWith("g.us") && !/code|p|ping|qr|estado|status|infobot|botinfo|report|reportar|invite|join|logout|suggest|help|menu/gim.test(m.text)) return
 if (opts["swonly"] && m.chat !== "status@broadcast") return
-if (opts["queque"] && m.text && !(isMods || isPrems)) {
+if (opts["queque"] && m.text && !(isPrems)) {
 const queque = this.msgqueque, time = 1000 * 5
 const previousID = queque[queque.length - 1]
 queque.push(m.id || m.key.id)
