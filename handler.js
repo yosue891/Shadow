@@ -47,7 +47,7 @@ if (!("premium" in user)) user.premium = false
 if (!user.premium) user.premiumTime = 0
 if (!("banned" in user)) user.banned = false
 if (!("bannedReason" in user)) user.bannedReason = ""
-if (!("commands" in user)) user.commands = 0
+if (!isNumber(user.commands)) user.commands = 0
 if (!isNumber(user.afk)) user.afk = -1
 if (!("afkReason" in user)) user.afkReason = ""
 if (!isNumber(user.warn)) user.warn = 0
@@ -253,6 +253,7 @@ throw !1
 
 if (!isAccept) continue
 m.plugin = name
+if (isAccept) { global.db.data.users[m.sender].commands = (global.db.data.users[m.sender].commands || 0) + 1 }
 if (chat) {
 const botId = this.user.jid
 const primaryBotId = chat.primaryBot
@@ -340,9 +341,7 @@ try {
 await plugin.after.call(this, m, extra)
 } catch (err) {
 console.error(err)
-}} 
-if (isAccept) { global.db.data.users[m.sender].commands = (global.db.data.users[m.sender].commands || 0) + 1 }
-}}}} catch (err) {
+}}}}}} catch (err) {
 console.error(err)
 } finally {
 if (opts["queque"] && m.text) {
