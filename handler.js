@@ -129,9 +129,8 @@ const chat = global.db.data.chats[m.chat]
 const conn = m.conn || global.conn
 const setting = global.db.data.settings[conn?.user?.jid]
   
-const isROwner = [...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
+const isROwner = [...global.owner.map((number) => number)].map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
 const isOwner = isROwner || m.fromMe
-const isMods = isROwner || global.mods.map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
 const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender) || user.premium == true
 
 if (opts["nyimak"])  return
@@ -205,7 +204,6 @@ userGroup,
 botGroup,
 isROwner,
 isOwner,
-isMods,
 isRAdmin,
 isAdmin,
 isBotAdmin,
@@ -285,10 +283,6 @@ if (plugin.owner && !isOwner) {
 fail("owner", m, this)
 continue
 }
-if (plugin.mods && !isMods) {
-fail("mods", m, this)
-continue
-}
 if (plugin.premium && !isPrems) {
 fail("premium", m, this)
 continue
@@ -324,7 +318,6 @@ userGroup,
 botGroup,
 isROwner,
 isOwner,
-isMods,
 isRAdmin,
 isAdmin,
 isBotAdmin,
