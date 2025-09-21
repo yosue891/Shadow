@@ -6917,6 +6917,67 @@
       }
     ]
   },
+  "75844032": {
+    "name": "Kaoru Hana Wa Rin To Saku",
+    "characters": [
+      {
+        "id": "532010",
+        "name": "Kaoruko Waguri",
+        "gender": "Mujer",
+        "tags": ["waguri_kaoruko"],
+        "value": 100
+      },
+      {
+        "id": "345623",
+        "name": "Subaru Hoshina",
+        "gender": "Mujer",
+        "tags": ["hoshina_subaru"],
+        "value": 100
+      },
+      {
+        "id": "831389",
+        "name": "Madoka Yuzuhara",
+        "gender": "Mujer",
+        "tags": ["yuzuhara_madoka"],
+        "value": 100
+      },
+      {
+        "id": "272795",
+        "name": "Kyouko Tsumugi",
+        "gender": "Mujer",
+        "tags": ["tsumugi_kyouko"],
+        "value": 100
+      },
+      {
+        "id": "686908",
+        "name": "Ayumi Sawatari",
+        "gender": "Mujer",
+        "tags": ["sawatari_ayumi"],
+        "value": 100
+      },
+      {
+        "id": "924754",
+        "name": "Rintarou Tsumugi",
+        "gender": "Hombre",
+        "tags": ["tsumugi_rintarou"],
+        "value": 100
+      },
+      {
+        "id": "526732",
+        "name": "Saku Natsusawa",
+        "gender": "Hombre",
+        "tags": ["natsusawa_saku"],
+        "value": 100
+      },
+      {
+        "id": "842783",
+        "name": "Ayato Yorita",
+        "gender": "Hombre",
+        "tags": ["yorita_ayato"],
+        "value": 100
+      }
+    ]
+  },
   "78814121": {
     "name": "Arifureta Shokugyou de Sekai Saikyou",
     "tags": ["Arifureta"],
