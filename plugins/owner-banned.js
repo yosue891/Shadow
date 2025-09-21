@@ -1,5 +1,5 @@
-const handler = async (m, { conn, text, usedPrefix, command, args, isROwner, isMods }) => {
-if (!isMods) return
+const handler = async (m, { conn, text, usedPrefix, command, args, isROwner }) => {
+if (!isROwner) return
 const bot = conn.user.jid.split('@')[0]
 const users = global.db.data.users
 const chats = global.db.data.chats
