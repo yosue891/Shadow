@@ -22,7 +22,6 @@
 },
 "homepage": "https://github.com/The-King-Destroy/YukiBot-MD#readme",
 "dependencies": {
-"@bochilteam/scraper": "^4.2.4",
 "@hapi/boom": "^10.0.1",
 "@vitalets/google-translate-api": "^8.0.0",
 "@whiskeysockets/baileys": "github:this-xyz/bails",
@@ -53,7 +52,6 @@
 "performance-now": "^2.1.0",
 "pino": "^8.6.1",
 "qrcode": "^1.5.1",
-"ruhend-scraper": "^7.0.4",
 "syntax-error": "^1.4.0",
 "terminal-image": "^2.0.0",
 "url-regex-safe": "^3.0.0",
