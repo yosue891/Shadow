@@ -258,14 +258,10 @@ const botId = this.user.jid
 const primaryBotId = chat.primaryBot
 if (name !== "group-banchat.js" && chat?.isBanned && !isMods) {
 if (!primaryBotId || primaryBotId === botId) {
-const aviso = `ꕥ El bot *${setting.botname}* está desactivado en este grupo\n\n> ✦ Un *administrador* puede activarlo con el comando:\n> » *${usedPrefix}bot on*`
-await m.reply(aviso)
 return
 }}
 if (m.text && user.banned && !isMods) {
-const mensaje = `ꕥ Estas baneado/a, no puedes usar comandos en este bot!\n\n> ● *Razón ›* ${user.bannedReason}\n\n> ● Si este Bot es cuenta oficial y tienes evidencia que respalde que este mensaje es un error, puedes exponer tu caso con un moderador.`.trim()
 if (!primaryBotId || primaryBotId === botId) {
-m.reply(mensaje)
 return
 }}}
 const adminMode = chat.modoadmin || false
@@ -374,7 +370,7 @@ admin: `『✦』El comando *${comando}* solo puede ser usado por los administra
 botAdmin: `『✦』Para ejecutar el comando *${comando}* debo ser administrador del grupo.`,
 restrict: `『✦』Esta caracteristica está desactivada.`
 }[type]
-if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))
+if (msg) return m.reply(msg)
 }
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
