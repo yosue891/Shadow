@@ -9,14 +9,14 @@ let handler = async (m, { conn}) => {
   let list = [
     {
       displayName: "🌸 Hatsune Miku Creator 🌸",
-      vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Hatsune Miku\nTEL;type=CELL;waid=573171514640:+57 317 1514640\nEND:VCARD`
+      vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Hatsune Miku\nTEL;type=CELL;waid=523328418129:+52 33 2841 8129 \nEND:VCARD`
 }
   ];
 
   const canalInfo = {
     title: '💙 Canal Oficial de Miku 💙',
     body: 'Haz clic para ver el canal del bot estilo Miku',
-    thumbnailUrl: 'https://files.catbox.moe/26kguo.jpg',
+    thumbnailUrl: 'https://qu.ax/LOLkr.jpg',
     sourceUrl: 'https://whatsapp.com/channel/0029Vb6sgWdJkK73qeLU0J0N',
     mediaType: 1,
     renderLargerThumbnail: true
@@ -43,10 +43,10 @@ let handler = async (m, { conn}) => {
 
 📱 𝗡𝗨́𝗠𝗘𝗥𝗢 𝗗𝗘 𝗠𝗜𝗞𝗨:
 +57 317 1514640 ☟
-https://wa.me/573189035921?text=
+https://wa.me/523328418129?text=
 
 🎀 𝗖𝗢𝗗𝗘 𝗗𝗘𝗟 𝗕𝗢𝗧:
-https://wa.me/573189035921?text=.code`;
+https://wa.me/573171514640?text=.code`;
 
   // Enviar mensaje decorado con preview al final
   await conn.sendMessage(m.chat, {
