@@ -46,7 +46,7 @@ let handler = async (m, { conn}) => {
 https://wa.me/523328418129?text=
 
 🎀 𝗖𝗢𝗗𝗘 𝗗𝗘𝗟 𝗕𝗢𝗧:
-https://wa.me/573171514640?text=.code`;
+https://wa.me/527289103061?text=.code`;
 
   // Enviar mensaje decorado con preview al final
   await conn.sendMessage(m.chat, {
